@@ -34,3 +34,18 @@ def search_word(name: str, number: Optional[int] = 0) -> list[str]:
 def search_prefix(name: str) -> list[str]:
     r = requests.get(f"{BASE_URL}/prefix/{name}")
     return r.json()
+
+
+def search_infix(name: str) -> list[str]:
+    r = requests.get(f"{BASE_URL}/infix/{name}")
+    return r.json()
+
+
+def search_suffix(name: str) -> list[str]:
+    r = requests.get(f"{BASE_URL}/suffix/{name}")
+    return r.json()
+
+
+def search_near(name: str) -> list[str]:
+    r = requests.get(f"{BASE_URL}/near/{name}")
+    return r.json()
