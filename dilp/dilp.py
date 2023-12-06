@@ -24,3 +24,13 @@ def get_word() -> dict[str, str]:
 def get_random() -> dict[str, str]:
     r = requests.get(f"{BASE_URL}/random")
     return r.json()
+
+
+def search_word(name: str, number: Optional[int] = 0):
+    r = requests.get(f"{BASE_URL}/word/{name}/{number}")
+    return r.json()
+
+
+def search_prefix(name: str):
+    r = requests.get(f"{BASE_URL}/prefix/{name}")
+    return r.json()
