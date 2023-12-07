@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "dilp"
 version = "0.1.0"
-description = ""
+description = "A wrapper for the Dicionário Aberto API"
 authors = ["Kennedy <kennedyinu@gmail.com>"]
 readme = "README.md"
 
